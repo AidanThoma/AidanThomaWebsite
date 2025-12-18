@@ -163,15 +163,22 @@ section:nth-child(even) {
 
 /* About */
 .about-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-light);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .about-content p {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-light);
 }
 
 /* Education & Experience */
