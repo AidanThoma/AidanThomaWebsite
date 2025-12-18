@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aidan Thoma - Computer Science & Cybersecurity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Aidan Freaking Thoma</div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#education" onclick="closeMenu()">Education</a></li>
+                <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Aidan Thoma</h1>
+            <p>Computer Science Student | Cybersecurity Enthusiast | Infrastructure Specialist</p>
+            <div class="hero-links">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="https://github.com/AidanThoma" target="_blank" class="btn btn-primary">View GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm a Computer Science student at Drake University with a focus on Cybersecurity, Data Analytics, and Information Systems. Currently working as an Infrastructure Support Specialist while maintaining a 3.67 GPA.</p>
+                <p>My passion lies in building secure, efficient systems and exploring the intersection of networking, cloud infrastructure, and cybersecurity. From creating ray casters in Python to managing home lab virtualization servers, I'm always working on projects that challenge me to grow.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline-item">
+                <h3>Drake University</h3>
+                <div class="timeline-meta">
+                    <span>📍 Des Moines, IA</span>
+                    <span>📅 Expected May 2027</span>
+                    <span>📊 GPA: 3.67</span>
+                </div>
+                <p><strong>Bachelor of Science in Computer Science</strong></p>
+                <p>Minors: Cybersecurity, Data Analytics, Information Systems</p>
+                <p><strong>Relevant Coursework:</strong> Object Oriented Programming, Cyber Security, Data Structures, Network and Database Management, Machine Learning</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="timeline-item">
+                <h3>Infrastructure Support Specialist</h3>
+                <div class="timeline-meta">
+                    <span>🏢 Drake University</span>
+                    <span>📅 June 2024 - Present</span>
+                    <span>📍 Des Moines, IA</span>
+                </div>
+                <ul>
+                    <li>Provide technical support across both systems and networking teams, resolving tickets related to hardware, software, and network connectivity while ensuring minimal downtime for end users</li>
+                    <li>Contribute to infrastructure projects involving Azure cloud services, CISCO network services, scripting, and network troubleshooting to enhance system performance and efficiency</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Sales Representative</h3>
+                <div class="timeline-meta">
+                    <span>🏢 Saint Andrews Capital / Empower</span>
+                    <span>📅 May - August 2024</span>
+                    <span>📍 Hartford, CT</span>
+                </div>
+                <ul>
+                    <li>Generated $561,643 in revenue by selling Solar Panels</li>
+                    <li>Improved troubleshooting capabilities being able to solve clients' problems needing a quick-thinking mind to be able to do so</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python (Proficient)</li>
+                        <li>PowerShell (Proficient)</li>
+                        <li>Java (Proficient)</li>
+                        <li>C/C++ (Working Knowledge)</li>
+                        <li>SQL (Working Knowledge)</li>
+                        <li>MIPS Assembly (Working Knowledge)</li>
+                        <li>HTML/CSS/JavaScript (Exposure)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Azure Cloud Services</li>
+                        <li>CISCO Network Services</li>
+                        <li>Proxmox Virtualization</li>
+                        <li>Pi-hole</li>
+                        <li>Firewall Configuration</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Core Competencies</h3>
+                    <ul>
+                        <li>Network Infrastructure</li>
+                        <li>Cybersecurity</li>
+                        <li>System Administration</li>
+                        <li>Cloud Computing</li>
+                        <li>Technical Support</li>
+                        <li>Excel (Certified Associate)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Home Lab Virtualization Server</h3>
+                    <div class="project-date">June 2025 - Present</div>
+                    <p>Repurposed a 2010 HP desktop into a Proxmox-based virtualization environment. Configured a custom subnet with Pi-hole for network-wide ad blocking, a firewall for traffic control, and multiple virtual machines and containers, while granting minimal access control to give my roommates guest privileges.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Cyber Security Club Server Deployment</h3>
+                    <div class="project-date">April 2025</div>
+                    <p>Assisted in physically assembling and setting up a server tower and rack-mounted server in the college datacenter for cybersecurity club use.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Python Ray Caster</h3>
+                    <div class="project-date">December 2024</div>
+                    <p>A personal project where I created a ray caster from scratch using pygame and python. Learned how to incorporate trigonometry and other math into my programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:aidan.thoma@drake.edu">aidan.thoma@drake.edu</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <h3>Phone</h3>
+                    <a href="tel:+15153572450">(515) 357-2450</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/aidan-thoma" target="_blank">linkedin.com/in/aidan-thoma</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💻</div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/AidanThoma" target="_blank">github.com/AidanThoma</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aidan Thoma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
