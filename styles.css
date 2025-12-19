@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 :root {
     --primary: #3b7ab9;
     --primary-dark: #1f5183;
@@ -71,19 +75,28 @@ nav {
 
 /* Hero Section */
 /* Hero Section with Animated Sliding Background */
+/* Hero Section with Animated Sliding Background */
 .hero {
-    padding: 6rem 0;
+    padding: 2rem 0;
     text-align: center;
     color: white;
     position: relative;
     overflow: hidden;
-    min-height: 400px;
-    box-shadow: 0 100px 20px rgb(247, 250, 255);
+    min-height: 100vh;  /* 100vh = 100% of viewport height */
+    display: flex;
+    align-items: center;  /* Centers content vertically */
+    margin-bottom: 3rem;
+    box-shadow: 0 15px 50px rgba(59, 122, 185, 0.3);
 }
 
 .hero .container {
     position: relative;
     z-index: 2;
+    width: 100%;
+}
+
+#about {
+    margin-top: 0;  /* Remove the overlap */
 }
 
 .hero::before,
@@ -104,7 +117,7 @@ nav {
 }
 
 .hero::after {
-    background-image: linear-gradient(-60deg, var(--primary) 50%, var(--primary-light) 50%);
+    background-image: linear-gradient(-60deg, var(--primary-light) 50%, var(--primary-dark) 50%);
     animation: slide 25s ease-in-out infinite alternate-reverse;
 }
 
@@ -205,6 +218,13 @@ section:nth-child(even) {
 }
 
 /* About */
+
+#about {
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+}
+
 .about-content {
     max-width: 900px;
     margin: 0 auto;
