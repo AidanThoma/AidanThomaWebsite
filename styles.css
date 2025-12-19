@@ -36,6 +36,7 @@ header {
     top: 0;
     z-index: 100;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.15);
 }
 
 nav {
@@ -69,11 +70,51 @@ nav {
 }
 
 /* Hero Section */
+/* Hero Section with Animated Sliding Background */
 .hero {
     padding: 6rem 0;
     text-align: center;
-    background: #1e293b;
-    color: black;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    box-shadow: 0 100px 20px rgb(247, 250, 255);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero::before,
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    right: -50%;
+    top: 0;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.hero::before {
+    background-image: linear-gradient(-60deg, var(--primary) 50%, var(--primary-light) 50%);
+    animation: slide 15s ease-in-out infinite alternate;
+}
+
+.hero::after {
+    background-image: linear-gradient(-60deg, var(--primary) 50%, var(--primary-light) 50%);
+    animation: slide 25s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
 }
 
 .hero h1 {
@@ -94,8 +135,10 @@ nav {
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 1.5rem;
-    border: 8px solid var(--primary-light);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3), inset 0 0 10px rgba(0,0,0,0.1);
+    border: 6px solid white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 3;
 }
 
 .hero-links {
