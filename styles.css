@@ -412,10 +412,6 @@ section:nth-child(even) {
     border-bottom: 1px solid rgba(0,0,0,0.07);
 }
 
-.contact-item:last-child {
-    border-bottom: none;
-}
-
 .contact-icon {
     width: 1.25rem;
     font-size: 1.1rem;
