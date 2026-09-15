@@ -287,20 +287,22 @@ section:nth-child(even) {
 /* Skills */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
+    align-items: stretch;
 }
 
 .skill-category {
     background: white;
-    padding: 2rem;
+    padding: 1.25rem 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    height: 100%;
 }
 
 .skill-category h3 {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
     color: var(--primary);
 }
 
@@ -309,9 +311,10 @@ section:nth-child(even) {
 }
 
 .skill-category li {
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
     color: var(--text-light);
     border-bottom: 1px solid var(--border);
+    line-height: 1.4;
 }
 
 .skill-category li:last-child {
@@ -331,6 +334,42 @@ section:nth-child(even) {
     padding: 2rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resume-section {
+    padding-top: 4rem;
+}
+
+.resume-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.resume-preview-wrapper {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f9fafb;
+}
+
+.resume-preview {
+    width: 100%;
+    min-height: 1100px;
+    border: none;
+    display: block;
+    background: white;
+}
+
+.resume-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
 }
 
 .project-card:hover {
@@ -365,7 +404,8 @@ section:nth-child(even) {
 }
 
 .contact-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1.25rem 5.5rem minmax(0, 1fr);
     align-items: center;
     gap: 0.85rem;
     padding: 0.4rem 0;
@@ -377,9 +417,11 @@ section:nth-child(even) {
 }
 
 .contact-icon {
+    width: 1.25rem;
     font-size: 1.1rem;
     opacity: 0.6;
     flex-shrink: 0;
+    text-align: center;
 }
 
 .contact-item h3 {

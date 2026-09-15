@@ -1,0 +1,36 @@
+Aidan Thoma
+aidan.thoma@drake.edu| (515) 357-2450 | Des Moines, IA| aidanthoma.com | linkedin.com/in/aidan-thoma | github.com/AidanThoma
+EDUCATION 
+Projected Graduation May 2027
+Drake University, Des Moines, IA                                                                                                    
+•	Bachelor of Science in Computer Science with Cybersecurity, Data Analytics and IS Minor, Current GPA 3.7
+
+TECHNICAL SKILLS
+•	Certifications: Microsoft Office Specialist Excel Associate
+•	Networking & Infrastructure: experience with switching and wireless deployment, Aruba Central cloud management, and API-based network monitoring; strong foundation in core networking concepts, and firewall configuration; Managed identity and device security via Microsoft Entra ID and Intune
+•	Cloud & Hosting: Experience with Azure cloud services, AWS, Proxmox, and Cloudflare
+•	Programming Languages: Proficient in Python, PowerShell, SQL, and Java; variety of knowledge in C/C++, MIPS Assembly, HTML, CSS, and JavaScript
+•	Version Control & Collaboration: Familiar with Git and GitHub for source control and team collaboration
+
+EXPERIENCE
+June 2025 - Present
+Drake University, Des Moines, IA
+Infrastructure Support Specialist
+•	Provide technical support across both systems and networking teams, resolving tickets related to hardware, software, and network connectivity while ensuring minimal downtime for end users.
+•	Contribute to infrastructure projects involving Azure cloud services, CISCO network services, scripting, and network troubleshooting to enhance system performance and efficiency.
+May – August 2026
+Heartland Business Systems, Des Moines, IA
+Network Engineer Associate
+•	Managed enterprise wireless and switching infrastructure for multiple consulting clients using Aruba Central, including a network supporting 30,000+ connected clients
+•	Configured and provisioned switches and access points, handling both physical installation and cloud-based management through Aruba Central
+•	Used the Aruba API to pull network data for monitoring, reporting, and troubleshooting across client environments
+
+Personal PROJECTS
+June 2025 - Present
+	Home Lab Virtualization Server – Repurposed legacy hardware into a Proxmox-based virtualization environment; designed a custom subnet with Pi-hole, firewall rules, and multiple VMs/containers, implementing role-based access controls
+
+CAMPUS INVOLVEMENT 
+December 2024 - Present
+Drake Cyber Security Club, Des Moines, IA 				    
+Current Member
+•	Represented Drake University in the ICEAGE CDC/CTF, performing system hardening, service availability monitoring, and incident response; earned 2nd place (Community College division)
