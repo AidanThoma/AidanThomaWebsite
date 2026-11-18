@@ -1,0 +1,193 @@
+.homelab-page .homelab-hero {
+  min-height: 360px;
+  margin-bottom: 0;
+  padding: 5rem 0;
+  text-align: center;
+  color: var(--text);
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  background: white;
+  box-shadow: 0 15px 50px rgba(59, 122, 185, 0.12);
+}
+
+.homelab-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.homelab-home-link:hover {
+  color: var(--primary);
+}
+
+.homelab-home-link:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 4px;
+}
+
+.homelab-particle-field {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.homelab-particle-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.homelab-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.homelab-hero h1 {
+  margin-bottom: 0.75rem;
+  color: var(--text);
+  font-size: 3rem;
+}
+
+.homelab-eyebrow,
+.homelab-feature-label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.homelab-eyebrow {
+  margin-bottom: 0.5rem;
+  color: var(--primary-dark);
+}
+
+.homelab-intro {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  color: var(--text-light);
+}
+
+.homelab-about {
+  background: white;
+}
+
+.homelab-about-copy {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--text-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.homelab-about-copy p + p {
+  margin-top: 1rem;
+}
+
+.homelab-features {
+  background: var(--bg-alt);
+}
+
+.homelab-feature-list {
+  display: grid;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.homelab-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.homelab-feature-copy h3 {
+  margin: 0.35rem 0 0.75rem;
+  color: var(--text);
+  font-size: 1.5rem;
+}
+
+.homelab-feature-copy p:last-child {
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.homelab-feature-label {
+  color: var(--primary);
+}
+
+.homelab-screenshot {
+  display: block;
+  width: 100%;
+  max-height: 440px;
+  object-fit: contain;
+  object-position: center;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-alt);
+}
+
+.homelab-tunnel-visual {
+  min-height: 220px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-alt);
+  color: var(--text-light);
+  text-align: center;
+}
+
+.homelab-tunnel-visual strong {
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  background: var(--primary);
+  color: white;
+}
+
+.homelab-tunnel-visual small {
+  font-size: 0.85rem;
+}
+
+.homelab-tunnel-line {
+  width: 2px;
+  height: 18px;
+  background: var(--primary-light);
+}
+
+@media (max-width: 768px) {
+  .homelab-page .homelab-hero {
+    min-height: 300px;
+    padding: 4rem 0;
+  }
+
+  .homelab-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .homelab-feature {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+}
+

@@ -168,6 +168,67 @@ section:nth-child(even) {
   border-radius: 2px;
 }
 
+#about,
+#education,
+#experience,
+#skills,
+#projects {
+  --wave-width-start: max(550vh, 825vw);
+  --wave-width-end: 100vw;
+  --wave-height: max(100vh, 150vw);
+  background-color: var(--bg-alt);
+  background-image: url('/stacked-waves-haikei.svg?v=20261117-10');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: var(--wave-width-start) var(--wave-height);
+}
+
+@keyframes wave-scroll {
+  from {
+    background-size: var(--wave-width-start) var(--wave-height);
+  }
+  to {
+    background-size: var(--wave-width-end) var(--wave-height);
+  }
+}
+
+@supports (animation-timeline: scroll(root block)) {
+  #about,
+  #education,
+  #experience,
+  #skills,
+  #projects {
+    animation: wave-scroll 1s linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 15% 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #about,
+  #education,
+  #experience,
+  #skills,
+  #projects {
+    --wave-width-start: max(385vh, 577.5vw);
+    --wave-width-end: 100vw;
+    --wave-height: max(150vh, 225vw);
+    background-size: var(--wave-width-start) var(--wave-height);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #about,
+  #education,
+  #experience,
+  #skills,
+  #projects {
+    animation: none;
+    background-position: center;
+  }
+}
+
 #about {
   margin-top: -50px;
   position: relative;
@@ -296,6 +357,35 @@ section:nth-child(even) {
   transition: transform 0.3s, box-shadow 0.3s, opacity 0.5s;
   opacity: 0;
   transform: translateY(20px);
+}
+
+.project-card[href] {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-card[href]:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 4px;
+}
+
+.project-card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.25rem;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.project-card-action span {
+  transition: transform 0.2s ease;
+}
+
+.project-card[href]:hover .project-card-action span,
+.project-card[href]:focus-visible .project-card-action span {
+  transform: translateX(4px);
 }
 
 .project-card.visible {

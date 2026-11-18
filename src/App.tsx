@@ -1,9 +1,18 @@
 import { useEffect, useState } from 'react'
 import aidanImg from './assets/aidan.png'
+import HomeLabPage from './HomeLabPage'
 import './App.css'
 
 
 function App() {
+  if (window.location.pathname.replace(/\/+$/, '') === '/homelab') {
+    return <HomeLabPage />
+  }
+
+  return <PortfolioPage />
+}
+
+function PortfolioPage() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -153,11 +162,14 @@ function App() {
           <div className="container">
             <h2 className="section-title">Projects</h2>
             <div className="projects-grid">
-              <div className="project-card">
+              <a className="project-card" href="/homelab">
                 <h3>Home Lab Virtualization Server</h3>
                 <div className="project-date">June 2025 - Present</div>
-                <p>Repurposed legacy hardware into a Proxmox-based virtualization environment. Designed a custom subnet with Pi-hole, firewall rules, and multiple VMs and containers while implementing role-based access controls.</p>
-              </div>
+                <p>My home lab is a self-hosted IT environment built to explore virtualization, networking, and cloud infrastructure. Using technologies like Proxmox, Docker, and Linux, I gain hands-on experience deploying, managing, and troubleshooting real-world systems.</p>
+                <span className="project-card-action">
+                  Explore the homelab <span aria-hidden="true">→</span>
+                </span>
+              </a>
               <div className="project-card">
                 <h3>Cyber Security Club / ICEAGE CDC/CTF</h3>
                 <div className="project-date">December 2024 - Present</div>
