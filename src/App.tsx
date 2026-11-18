@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import aidanImg from './assets/aidan.png'
 import './App.css'
 
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
 
