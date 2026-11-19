@@ -149,6 +149,10 @@ section:nth-child(even) {
   background: var(--bg-alt);
 }
 
+#top:not(.homelab-page) > section:not(.hero) {
+  background: #f6f6f6;
+}
+
 .section-title {
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -166,67 +170,6 @@ section:nth-child(even) {
   background: var(--primary);
   margin: 0.6rem auto 0;
   border-radius: 2px;
-}
-
-#about,
-#education,
-#experience,
-#skills,
-#projects {
-  --wave-width-start: max(550vh, 825vw);
-  --wave-width-end: 100vw;
-  --wave-height: max(100vh, 150vw);
-  background-color: var(--bg-alt);
-  background-image: url('/stacked-waves-haikei.svg?v=20261117-10');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: var(--wave-width-start) var(--wave-height);
-}
-
-@keyframes wave-scroll {
-  from {
-    background-size: var(--wave-width-start) var(--wave-height);
-  }
-  to {
-    background-size: var(--wave-width-end) var(--wave-height);
-  }
-}
-
-@supports (animation-timeline: scroll(root block)) {
-  #about,
-  #education,
-  #experience,
-  #skills,
-  #projects {
-    animation: wave-scroll 1s linear both;
-    animation-timeline: scroll(root block);
-    animation-range: 15% 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  #about,
-  #education,
-  #experience,
-  #skills,
-  #projects {
-    --wave-width-start: max(385vh, 577.5vw);
-    --wave-width-end: 100vw;
-    --wave-height: max(150vh, 225vw);
-    background-size: var(--wave-width-start) var(--wave-height);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  #about,
-  #education,
-  #experience,
-  #skills,
-  #projects {
-    animation: none;
-    background-position: center;
-  }
 }
 
 #about {
